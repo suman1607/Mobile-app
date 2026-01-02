@@ -1,8 +1,11 @@
+import ShaderBackground from "@/components/ui/shader-background";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
+      <ShaderBackground />
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -11,16 +14,16 @@ export default function Home() {
               </span>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+              <a href="#features" className="text-gray-200 hover:text-white transition-colors">
                 Features
               </a>
-              <a href="#pricing" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+              <a href="#pricing" className="text-gray-200 hover:text-white transition-colors">
                 Pricing
               </a>
-              <a href="#testimonials" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+              <a href="#testimonials" className="text-gray-200 hover:text-white transition-colors">
                 Testimonials
               </a>
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+              <button className="px-4 py-2 text-sm font-medium text-gray-200 hover:text-white transition-colors">
                 Sign In
               </button>
               <button className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300">
@@ -32,34 +35,34 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 text-sm font-medium text-white bg-white/10 backdrop-blur-sm border border-white/20 rounded-full">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-400"></span>
               </span>
               New: AI-powered features now available
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               Build Better Products{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Faster
               </span>
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
+            <p className="text-xl text-gray-200 mb-10 leading-relaxed drop-shadow-md">
               The all-in-one platform that helps teams collaborate, innovate, and ship products that customers love. Start building your dream product today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="w-full sm:w-auto px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105">
                 Start Free Trial
               </button>
-              <button className="w-full sm:w-auto px-8 py-4 text-lg font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+              <button className="w-full sm:w-auto px-8 py-4 text-lg font-medium text-white bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300">
                 Watch Demo
               </button>
             </div>
-            <p className="mt-6 text-sm text-gray-500 dark:text-gray-500">
+            <p className="mt-6 text-sm text-gray-300 drop-shadow-md">
               No credit card required • 14-day free trial • Cancel anytime
             </p>
           </div>
